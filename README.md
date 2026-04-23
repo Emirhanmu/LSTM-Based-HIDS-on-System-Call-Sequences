@@ -1,3 +1,3 @@
 # LSTM-Based-HIDS-on-System-Call-Sequences
-Host-Based Intrusion Detection Using LSTM on System Call Sequences
+
 This project focuses on host-based intrusion detection by modeling Linux system call sequences with an LSTM-based anomaly detection approach. The system is trained on normal process behavior and aims to detect deviations as potential anomalies. As a baseline, a classical sequence-based method such as STIDE/n-gram is also implemented for comparison. The project uses the LID-DS 2021 dataset and includes preprocessing, sequence generation, baseline modeling, LSTM training, and evaluation.
