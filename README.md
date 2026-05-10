@@ -11,3 +11,14 @@ This project focuses on host-based intrusion detection by modeling Linux system 
 - Week 4: Baseline model
 - Week 5: LSTM model
 - Week 6: Evaluation, report, and presentation
+
+
+
+## Current Progress
+
+- Built a preprocessing pipeline for LID-DS 2021 syscall traces:
+  parsing, cleaning, warmup filtering, and thread-based sliding windows
+- Implemented STIDE baseline
+- Implemented syscall-only LSTM sequence predictor
+- Implemented context-aware LSTM using syscall, process name, and return status
+- Added trace-level anomaly evaluation with top-10% score pooling
