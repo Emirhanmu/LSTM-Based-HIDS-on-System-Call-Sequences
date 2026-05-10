@@ -1,9 +1,20 @@
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-__pycache__/
-.ipynb_checkpoints/
+# Python
 venv/
-.env
+__pycache__/
 *.pyc
+
+# Data
+data/raw/
+data/extracted/
+data/processed/
+
+# Models / outputs
+*.pt
+*.pth
+*.csv
+*.gz
+*.json
+
+# OS / editor
+.DS_Store
+.vscode/

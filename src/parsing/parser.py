@@ -10,7 +10,7 @@ def parse_line(line: str):
 
     parts = line.split()
 
-    # Minimum beklenen yapı:
+    # Beklenen minimum format:
     # timestamp cpu_id thread_id process_name process_id syscall direction
     if len(parts) < 7:
         return None
@@ -43,7 +43,7 @@ def parse_line(line: str):
         return None
 
 
-def parse_file(file_path: str):
+def parse_file(file_path: str) -> pd.DataFrame:
     rows = []
 
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -55,6 +55,11 @@ def parse_file(file_path: str):
     return pd.DataFrame(rows)
 
 
+def save_parsed_csv(df: pd.DataFrame, output_file: str, sep: str = ";"):
+    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(output_file, index=False, sep=sep)
+
+
 if __name__ == "__main__":
     sample_file = "data/raw/sample.sc"
     output_file = "data/processed/parsed_sample.csv"
@@ -64,9 +69,7 @@ if __name__ == "__main__":
         print(df.head())
         print("\nShape:", df.shape)
 
-        Path("data/processed").mkdir(parents=True, exist_ok=True)
-        df.to_csv(output_file, index=False, sep=';')
-
+        save_parsed_csv(df, output_file, sep=";")
         print(f"\nSaved parsed file to: {output_file}")
     else:
         print(f"File not found: {sample_file}")
