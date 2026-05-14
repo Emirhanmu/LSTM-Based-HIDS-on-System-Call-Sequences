@@ -106,7 +106,7 @@ Our final reporting uses:
 
 ## Repository Structure
 
-"""
+```text
 src/
   baseline/
     trace_level_stide_eval_fast.py
@@ -140,7 +140,8 @@ results/
   bootstrap/
   error_analysis/
   profiles/
-"""
+```text
+
 
 ## Interactive Demo Dashboard
 
