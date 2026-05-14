@@ -176,7 +176,7 @@ if __name__ == "__main__":
     encoded_validation_csv = r"data\processed\php_cwe_434\validation_encoded_syscalls.csv"
     encoded_test_csv = r"data\processed\php_cwe_434\test_encoded_syscalls.csv"
 
-    # İlk LSTM denemesi için kontrollü subset
+    
     max_train_rows_for_vocab = 500_000
     max_train_encode_rows = 500_000
     max_validation_encode_rows = None

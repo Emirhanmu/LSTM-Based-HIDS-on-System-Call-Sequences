@@ -212,12 +212,12 @@ if __name__ == "__main__":
     train_df, val_df, test_df = build_php_cwe_434_datasets(
         window_size=30,
         stride=1,
-        train_max_files=10,
-        val_normal_max_files=5,
+        train_max_files=None,
+        val_normal_max_files=None,
         val_attack_max_files=2,
-        test_normal_max_files=5,
-        test_attack_max_files=5,
-    )
+        test_normal_max_files=None,
+        test_attack_max_files=None,
+)
 
     print("\n====================")
     print("FINAL DATASET STATUS")

@@ -18,3 +18,21 @@ data/processed/
 # OS / editor
 .DS_Store
 .vscode/
+
+# Large processed data
+data/processed/php_cwe_434/*.csv
+data/processed/php_cwe_434/*.pt
+data/processed/php_cwe_434/test_chunks/
+data/processed/php_cwe_434/trace_windows/
+
+# Keep only manually selected small result files
+!data/processed/php_cwe_434/trace_level_stide_eval_summary.csv
+!data/processed/php_cwe_434/trace_level_syscall_eval_summary.csv
+!data/processed/php_cwe_434/trace_level_context_eval_summary.csv
+!data/processed/php_cwe_434/trace_level_syscall_validation_normal_thresholds.csv
+!data/processed/php_cwe_434/trace_level_stide_validation_normal_thresholds.csv
+!data/processed/php_cwe_434/trace_level_context_validation_normal_thresholds.csv
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,4 @@
+model,threshold,fp_count,fn_count,tp_count,tn_count,top_fp_examples,top_fn_examples
+STIDE,0.145818,6,18,96,756,"['modern_rhodes_4277', 'clumsy_mendeleev_1185', 'sharp_rubin_6783', 'microscopic_ishizaka_1257', 'crooked_mendel_3664']","['rapid_morse_8170', 'fluffy_hellman_6508', 'mushy_wescoff_8958', 'wet_knuth_7624', 'high_shirley_7166']"
+LSTM Syscall,0.8952,6,7,107,756,"['modern_rhodes_4277', 'clumsy_mendeleev_1185', 'sharp_rubin_6783', 'microscopic_ishizaka_1257', 'crooked_mendel_3664']","['rapid_morse_8170', 'mushy_wescoff_8958', 'fluffy_hellman_6508', 'wet_knuth_7624', 'high_shirley_7166']"
+LSTM Context,1.06724,13,0,114,749,"['flat_faraday_4352', 'modern_rhodes_4277', 'lazy_feistel_5586', 'juicy_hermann_8870', 'clumsy_mendeleev_1185']",[]
