@@ -140,3 +140,48 @@ results/
   bootstrap/
   error_analysis/
   profiles/
+
+
+## Interactive Demo Dashboard
+
+This repository also includes a local Streamlit-based demo for trace-level inference.
+
+### Demo capabilities
+The dashboard can:
+
+- Upload a **raw trace** as `.zip` or `.sc`
+- Upload a **prepared single-trace windows CSV**
+- Run **one or more models** on the same trace:
+  - STIDE
+  - LSTM Syscall
+  - LSTM Context
+- Let the user choose the threshold policy:
+  - `q95`
+  - `q90`
+  - `original`
+- Display:
+  - trace-level comparison table
+  - model-specific decision cards
+  - window score profile plot
+  - top suspicious windows
+  - pattern-level explanation for STIDE and LSTM Syscall
+  - context-aware explanation for LSTM Context
+
+### Important note
+The dashboard is an **offline inference demo**.  
+It does **not** retrain models and does **not** represent a real-time production deployment.
+
+### Required artifacts
+Before running the dashboard, the following artifacts must already exist:
+
+- `data/processed/php_cwe_434/lstm_sequence_predictor.pt`
+- `data/processed/php_cwe_434/lstm_context_sequence_predictor.pt`
+- `data/processed/php_cwe_434/syscall_vocab.json`
+- `data/processed/php_cwe_434/context_vocab.json`
+
+The STIDE artifact must also be built once:
+
+```bash
+python -m src.demo.build_stide_artifact
+
+streamlit run .\src\demo\demo_app.py
