@@ -140,7 +140,7 @@ results/
   bootstrap/
   error_analysis/
   profiles/
-```text
+```
 
 
 ## Interactive Demo Dashboard
