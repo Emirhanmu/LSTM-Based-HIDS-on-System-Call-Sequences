@@ -106,11 +106,7 @@ Our final reporting uses:
 
 ## Repository Structure
 
-<<<<<<< HEAD
 ```text
-=======
-"""text
->>>>>>> 7f7ea01 (Update README for demo usage)
 src/
   baseline/
     trace_level_stide_eval_fast.py
@@ -138,18 +134,25 @@ src/
     error_analysis_q95.py
     plot_lstm_syscall_profiles.py
 
+  demo/
+    demo_app.py
+    demo_utils.py
+    explanation_utils.py
+    build_stide_artifact.py
+
 results/
   final_tables/
   final_figures/
   bootstrap/
   error_analysis/
   profiles/
-<<<<<<< HEAD
+
+data/
+  artifacts/
+  processed/php_cwe_434/
+
 ```
 
-=======
-"""text
->>>>>>> 7f7ea01 (Update README for demo usage)
 
 ## Interactive Demo Dashboard
 
