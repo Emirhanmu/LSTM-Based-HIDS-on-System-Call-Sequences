@@ -194,6 +194,8 @@ Before running the dashboard, the following artifacts must already exist:
 The STIDE artifact must also be built once:
 
 ```bash
+pip install -r requirements.txt
+
 python -m src.demo.build_stide_artifact
 
 streamlit run .\src\demo\demo_app.py
