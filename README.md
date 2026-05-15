@@ -106,7 +106,11 @@ Our final reporting uses:
 
 ## Repository Structure
 
+<<<<<<< HEAD
 ```text
+=======
+"""text
+>>>>>>> 7f7ea01 (Update README for demo usage)
 src/
   baseline/
     trace_level_stide_eval_fast.py
@@ -140,8 +144,12 @@ results/
   bootstrap/
   error_analysis/
   profiles/
+<<<<<<< HEAD
 ```
 
+=======
+"""text
+>>>>>>> 7f7ea01 (Update README for demo usage)
 
 ## Interactive Demo Dashboard
 
